@@ -1,0 +1,255 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+    
+}
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+
+header{
+    background-color: var(--amarillo);
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+header ul {
+    list-style-type:none;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header ul li{
+    display: flex;
+    
+}
+
+a{
+    text-decoration:none;
+    color: #000;
+}
+
+.header-superior{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.logo{
+    width: 30%;
+    padding: 10px;
+
+}
+.buscador{
+    padding: 5px;
+    color: var(--grisoscuro);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color:var(--grisoscuro);
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+
+}
+.icono-buscador {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color:var(--grisoscuro);
+    position:absolute;
+    right: 10px;
+    padding: 3px;
+}
+.formasDePago{
+    width: 35%;
+    margin-top: 45px;
+}
+.burger-menu{
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+    
+}
+.burger-menu i{
+    text-align: center;
+    background-color: var(--celeste);
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 5px 0 5px;
+    margin: 10px 0 20px 0;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--grisclaro);
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+    
+    
+}
+article{
+    margin-bottom: 10px;
+    background-color: #FFF;
+    width: 20%;
+}
+article img{
+    width: 70%;
+    margin-left: 40px;
+    
+}
+
+.product-info{
+    border-top: 1px solid var(--grisclaro);
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+
+    
+}
+.product-info i{
+    color: var(--verde);
+    font-size: 1.2 em;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h3.titulares{
+    font-size: 24px;
+}
+
+p.precio{
+    font-size: 18px;
+    width: 30%;
+    text-align: left;
+    
+
+} 
+p.descuento{
+    font-size: 16px;
+    width: 70%;
+    color: var(--verde);
+    text-align: right;
+    
+} 
+h4.descripcion{
+    font-size: 16px;
+    text-align:center
+    
+}
+main{
+    width: 90vw;
+}
+
+/*DISEÑO RESPONSIVE*/
+/*MOBILE PHONE*/
+@media only screen and (max-width:650px){
+    nav{
+        display: none;
+        
+    }
+    h4.descripcion{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    article{
+        width: 100%;
+    }
+    
+    
+    
+}
+/*TABLET*/
+@media only screen and (min-width:651)and (max-width:992){
+    
+    h4.descripcion{
+        display: block;
+    }
+    nav{
+        display: block;
+        padding-left: 5%;
+    }
+    article{
+        width: 40%;
+    }
+    
+}
+/*DESKTOP*/
+@media (min-width:993){
+    
+    h4.descripcion{
+        display: block;
+    }
+    nav{
+        display: block;
+        padding-left: 5%;
+    }
+    
+    
+    
+}
+
+/*PIE FOOTER*/
+footer h3{
+    font-weight: bolder;
+    
+}
+footer p{
+    color:var(--grisoscuro);
+}
+footer i{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--celeste);
+    font-size: 50px;
+
+}
+.pie {
+    
+    text-align: center;
+}
+.pie .iconosPie{
+    display: flex;
+    
+}
